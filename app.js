@@ -45,7 +45,7 @@ app.use (express.json ())
 app.use (cors (config.cors_opotions))
 
 app.use(session({
-    // secret: config.secret,
+    secret: config.secret,
     resave: true,
     saveUninitialized: true
 }))
