@@ -62,6 +62,17 @@ const signup = async (peticion, respuesta) => {
 		console.log (error.message)
 	}
 }
+const job_details = async (peticion, respuesta) => {
+	try {
+		
+
+		respuesta.render ('../views/job_details', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
+
 
 module.exports = {
     menu: menu,
@@ -70,4 +81,5 @@ module.exports = {
 	contact: contact,
 	login: login,
 	signup: signup,
+	job_details: job_details,
 }
