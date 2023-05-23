@@ -42,10 +42,32 @@ const contact = async (peticion, respuesta) => {
 		console.log (error.message)
 	}
 }
+const login = async (peticion, respuesta) => {
+	try {
+		
+
+		respuesta.render ('../views/login', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
+const signup = async (peticion, respuesta) => {
+	try {
+		
+
+		respuesta.render ('../views/signup', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
 
 module.exports = {
     menu: menu,
 	about: about,
 	jobs: jobs,
-	contact: contact
+	contact: contact,
+	login: login,
+	signup: signup,
 }
