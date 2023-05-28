@@ -16,6 +16,9 @@ router.get ('/elements', menu_functions.elements)
 router.get ('/blog', menu_functions.blog)
 router.get ('/single-blog', menu_functions.single_blog)
 router.get ('/profile', menu_functions.profile)
+router.get ('/process', menu_functions.validate_data)
+router.get ('/process-business', menu_functions.validate_data_business)
+router.get ('/process-registration', menu_functions.register_candidato)
 
 
 
