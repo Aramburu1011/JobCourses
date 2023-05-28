@@ -3,7 +3,7 @@ const session = require('express-session')
 const mssql = require ('mssql')
 const mysql = require('mysql')
 const express = require ('express')
-const { router } = require('../../app')
+// const { router } = require('../../app')
 
 const app = express ()
 
@@ -32,6 +32,17 @@ const menu = async (peticion, respuesta) => {
 		console.log (error.message)
 	}
 }
+const inicio = async (peticion, respuesta) => {
+	try {
+		
+
+		respuesta.render ('../views/index_inicio', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
+
 const about = async (peticion, respuesta) => {
 	try {
 		
@@ -82,6 +93,14 @@ const login = async (peticion, respuesta) => {
 		console.log (error.message)
 	}
 }
+const login_bussines = async (peticion, respuesta) => {
+	try {		
+		respuesta.render ('../views/login_bussines', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
 const signup = async (peticion, respuesta) => {
 	try {
 		
@@ -125,8 +144,6 @@ const signup_new = async (peticion, respuesta) => {
 const job_details = async (peticion, respuesta) => {
 	try {
 		
-		
-
 		respuesta.render ('../views/job_details', {
 		})
 	} catch (error) {
@@ -164,19 +181,33 @@ const single_blog = async (peticion, respuesta) => {
 	}
 }
 
+const profile = async (peticion, respuesta) => {
+	try {
+		
+
+		respuesta.render ('../views/profile', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
+
 
 
 module.exports = {
     menu: menu,
+	inicio:inicio,
 	about: about,
 	jobs: jobs,
 	contact: contact,
 	login: login,
+	login_bussines: login_bussines,
 	signup: signup,
 	signup_test: signup_test,
 	signup_new: signup_new,
 	job_details: job_details,
 	elements: elements,
 	blog: blog,
-	single_blog: single_blog
+	single_blog: single_blog,
+	profile: profile
 }
