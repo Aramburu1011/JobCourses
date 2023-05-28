@@ -12,6 +12,7 @@ app.set ('views', path.join (__dirname, '/views'))
 app.use (express.json ())
 app.use (cors (config.cors_opotions))
 
+
 app.use(session({
     secret: config.secret,
     resave: true,
@@ -29,5 +30,6 @@ app.use ((peticion, respuesta, next)=>{
 
     next()
 })
+
 
 module.exports = app

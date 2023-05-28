@@ -1,7 +1,11 @@
 const session = require('express-session')
 // const database = require ('../../database/database')
 const mssql = require ('mssql')
-const mysql = require('mysql');
+const mysql = require('mysql')
+const express = require ('express')
+const { router } = require('../../app')
+
+const app = express ()
 
 
 		var conexion = mysql.createConnection({
@@ -81,34 +85,33 @@ const login = async (peticion, respuesta) => {
 const signup = async (peticion, respuesta) => {
 	try {
 		
-		conexion.query(`SELECT * FROM user`, function (error, filas){
-			if(error){
-				throw error;
-			}else{
-				filas.forEach(fila => {
-					console.log(fila);
-				});
-			};
-		});
-		
-		conexion.end();
-
 		respuesta.render ('../views/signup', {
 		})
 	} catch (error) {
 		console.log (error.message)
 	}
 }
+const signup_test = async (peticion, respuesta) => {
+	try {
+		router.post("/signup/signup_test/:name", (peticion, respuesta)=>{
+			
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
+
 const signup_new = async (peticion, respuesta) => {
 	try {
-		var name = peticion.body.name;
+		const name = peticion.body;
 		
-		conexion.query("INSERT INTO `user`(`name`, `last_name`, `email`, `password`) VALUES ('"+ name +"' ,'Garcia','pepe@gmail.com','1234')", function (error, results){
+		conexion.query("INSERT INTO `user`(`name`, `last_name`, `rol`, `password`) VALUES ('Juan' ,'Garcia','pepe@gmail.com','1234')", function (error, results){
 			if(error){
 				throw error;
 			}else{
 
 				console.log('bien', results);
+				console.log(name,'datos')
 			};
 		})
 		conexion.end();
@@ -170,6 +173,7 @@ module.exports = {
 	contact: contact,
 	login: login,
 	signup: signup,
+	signup_test: signup_test,
 	signup_new: signup_new,
 	job_details: job_details,
 	elements: elements,
