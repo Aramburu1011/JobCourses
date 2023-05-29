@@ -26,5 +26,47 @@
     "salario": "SDF",
     "descripcion": "DSF",
     "oferta creada": "2023-05-28T23:00:14.171Z"
+  },
+  {
+    "titulo": "Desarrollador",
+    "sector": "Desarrollo",
+    "salario": "20000",
+    "descripcion": "Desarrollo",
+    "oferta creada": "2023-05-29T06:28:42.187Z"
+  },
+  {
+    "titulo": "Desarrollador",
+    "sector": "Desarrollo",
+    "salario": "20000",
+    "descripcion": "Desarrollo",
+    "oferta creada": "2023-05-29T06:28:43.213Z"
+  },
+  {
+    "titulo": "Desarrollador",
+    "sector": "Desarrollo",
+    "salario": "20000",
+    "descripcion": "Desarrollo",
+    "oferta creada": "2023-05-29T06:30:39.621Z"
+  },
+  {
+    "titulo": "Desarrollador",
+    "sector": "Desarrollo",
+    "salario": "20000",
+    "descripcion": "Desarrollo",
+    "oferta creada": "2023-05-29T06:30:40.688Z"
+  },
+  {
+    "titulo": "",
+    "sector": "",
+    "salario": "",
+    "descripcion": "",
+    "oferta creada": "2023-05-29T06:30:44.657Z"
+  },
+  {
+    "titulo": "",
+    "sector": "",
+    "salario": "",
+    "descripcion": "",
+    "oferta creada": "2023-05-29T06:30:45.655Z"
   }
 ]

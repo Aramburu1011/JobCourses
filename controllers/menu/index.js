@@ -108,6 +108,15 @@ const contact_user = async (peticion, respuesta) => {
 		console.log (error.message)
 	}
 }
+const contact_bussines = async (peticion, respuesta) => {
+	try {
+	
+		respuesta.render ('../views/contact_bussines', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
 
 const register_candidato = async (req, res) => {
 	try {
@@ -286,6 +295,15 @@ const job_details = async (peticion, respuesta) => {
 		console.log (error.message)
 	}
 }
+const job_details_user = async (peticion, respuesta) => {
+	try {
+		
+		respuesta.render ('../views/job_details_user', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
 const elements = async (peticion, respuesta) => {
 	try {
 		
@@ -371,7 +389,7 @@ const oferta_de_empleo = async (req, res) => {
 		  console.error(error);
 		}
 
-		res.render('../views/index_inicio')
+		res.render('../views/blog')
 	} catch (error) {
 		console.log (error.message)
 	}
@@ -388,6 +406,7 @@ module.exports = {
 	jobs_user: jobs_user,
 	contact: contact,
 	contact_user: contact_user,
+	contact_bussines: contact_bussines,
 	login: login,
 	validate_data: validate_data,
 	validate_data_business:validate_data_business,
@@ -397,6 +416,7 @@ module.exports = {
 	signup_test: signup_test,
 	signup_new: signup_new,
 	job_details: job_details,
+	job_details_user: job_details_user,
 	elements: elements,
 	blog: blog,
 	single_blog: single_blog,
