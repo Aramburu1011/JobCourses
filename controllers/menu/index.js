@@ -59,6 +59,17 @@ const about = async (peticion, respuesta) => {
 		console.log (error.message)
 	}
 }
+
+const about_user = async (peticion, respuesta) => {
+	try {
+		
+
+		respuesta.render ('../views/about_user', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
 const jobs = async (peticion, respuesta) => {
 	try {
 		
@@ -69,10 +80,29 @@ const jobs = async (peticion, respuesta) => {
 		console.log (error.message)
 	}
 }
+const jobs_user = async (peticion, respuesta) => {
+	try {
+		
+
+		respuesta.render ('../views/job_listing_user', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
 const contact = async (peticion, respuesta) => {
 	try {
 	
 		respuesta.render ('../views/contact', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
+const contact_user = async (peticion, respuesta) => {
+	try {
+	
+		respuesta.render ('../views/contact_user', {
 		})
 	} catch (error) {
 		console.log (error.message)
@@ -298,14 +328,66 @@ const profile = async (peticion, respuesta) => {
 	}
 }
 
+const new_employ = async (peticion, respuesta) => {
+	try {
+		
+
+		respuesta.render ('../views/form', {
+		})
+	} catch (error) {
+		console.log (error.message)
+	}
+}
+const oferta_de_empleo = async (req, res) => {
+	try {
+		const actual_time = new Date()
+		const titulo = req.query.titulo
+		const sector = req.query.sector
+		const salario = req.query.salario
+		const descripcion = req.query.descripcion
+		const userData = {
+			titulo,
+			sector,
+			salario,
+			descripcion,
+			"oferta creada": actual_time
+		  };
+		
+		let existingData = [];
+		try {
+		  const fileData = fs.readFileSync('ofertas_creadas.json');
+		  existingData = JSON.parse(fileData);
+		} catch (error) {
+		  console.error(error);
+		}
+	  
+		// Add the new user data to the existing data
+		existingData.push(userData);
+	  
+		// Write the updated data back to the JSON file
+		try {
+		  fs.writeFileSync('ofertas_creadas.json', JSON.stringify(existingData, null, 2));
+		} catch (error) {
+		  console.error(error);
+		}
+
+		res.render('../views/index_inicio')
+	} catch (error) {
+		console.log (error.message)
+	}
+}
+
 
 
 module.exports = {
     menu: menu,
 	inicio:inicio,
 	about: about,
+	about_user: about_user,
 	jobs: jobs,
+	jobs_user: jobs_user,
 	contact: contact,
+	contact_user: contact_user,
 	login: login,
 	validate_data: validate_data,
 	validate_data_business:validate_data_business,
@@ -318,5 +400,7 @@ module.exports = {
 	elements: elements,
 	blog: blog,
 	single_blog: single_blog,
-	profile: profile
+	profile: profile,
+	new_employ: new_employ,
+	oferta_de_empleo: oferta_de_empleo,
 }

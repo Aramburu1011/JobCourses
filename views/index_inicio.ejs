@@ -50,7 +50,7 @@
                         <div class="col-lg-3 col-md-2">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="/"><img src="public/img/logojob-sin-fondo.png" alt="" style="width: 21vh;"></a>
+                                <a href="/index-inicio"><img src="public/img/logojob-sin-fondo.png" alt="" style="width: 21vh;"></a>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -59,10 +59,10 @@
                                 <div class="main-menu">
                                     <nav class="d-none d-lg-block">
                                         <ul id="navigation">
-                                            <li><a href="/" style="text-decoration: none;">Inicio</a></li>
-                                            <li><a href="/job_listing" style="text-decoration: none;">Encuentra
+                                            <li><a href="/index-inicio" style="text-decoration: none;">Inicio</a></li>
+                                            <li><a href="/job_listing_user" style="text-decoration: none;">Encuentra
                                                     trabajo</a></li>
-                                            <li><a href="/about" style="text-decoration: none;">Sobre nosotros</a></li>
+                                            <!-- <li><a href="/about_user" style="text-decoration: none;">Sobre nosotros</a></li> -->
                                             <!-- <li><a href="#">Página</a>
                                                 <ul class="submenu">
                                                     <li><a href="blog.html">Blog</a></li>
@@ -71,14 +71,14 @@
                                                     <li><a href="/job_details">Detalles de trabajos</a></li>
                                                 </ul>
                                             </li> -->
-                                            <li><a href="/contact" style="text-decoration: none;">Contacto</a></li>
+                                            <li><a href="/contact_user" style="text-decoration: none;">Contacto</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-btn d-none f-right d-lg-block">
                                     <h5><i class="fa-solid fa-user fa-lg" style="width: 30px;"></i>
-                                        <a href="/profile">
+                                        <a href="/profile" style="text-decoration: none;">
                                             Alberto Aramburu
                                         </a>
                                     </h5>
@@ -122,10 +122,10 @@
                                     <div class="select-form">
                                         <div class="select-itms">
                                             <select name="select" id="select1">
-                                                <option value="">Localizacion 1</option>
-                                                <option value="">Localizacion 2</option>
-                                                <option value="">Localizacion 3</option>
-                                                <option value="">Localizacion 4</option>
+                                                <option value="">Madrid</option>
+                                                <option value="">Barcelona</option>
+                                                <option value="">Andalucia</option>
+                                                <option value="">Galicia</option>
                                             </select>
                                         </div>
                                     </div>
@@ -141,10 +141,11 @@
         </div>
         <!-- slider Area End-->
         <!-- Our Services Start -->
-        <div class="our-services section-pad-t30">
+        <div class="our-services">
             <div class="container">
                 <!-- Section Tittle -->
-                <div class="row">
+                <div class="row" style="padding-top: 10vh;">
+
                     <div class="col-lg-12">
                         <div class="section-tittle text-center">
                             <span>EMPLEOS DESTACADOS</span>
@@ -253,31 +254,21 @@
                 </div>
             </div>
         </div>
-        <!-- Our Services End -->
-        <!-- Online CV Area Start -->
-        <div class="online-cv cv-bg section-overly pt-90 pb-120" data-background="public/img/gallery/cv_bg.jpg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-10">
-                        <div class="cv-caption text-center">
-                            <p class="pera1">FEATURED TOURS Packages</p>
-                            <p class="pera2"> Make a Difference with Your Online Resume!</p>
-                            <a href="#" class="border-btn2 border-btn4">Upload your cv</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="comment-form">
+            <form class="form-contact comment_form" action="#" id="commentForm">
+               <div class="form-group">
+               </div>
+            </form>
+         </div>
         <!-- Online CV Area End-->
         <!-- Featured_job_start -->
-        <section class="featured-job-area feature-padding">
+        <section class="featured-job-area">
             <div class="container">
                 <!-- Section Tittle -->
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle text-center">
-                            <span>Recent Job</span>
-                            <h2>Featured Jobs</h2>
+                            <h2>Trabajos Recientes</h2>
                         </div>
                     </div>
                 </div>
@@ -291,18 +282,18 @@
                                 </div>
                                 <div class="job-tittle">
                                     <a href="/job_details">
-                                        <h4>Digital Marketer</h4>
+                                        <h4>Desarrollador/a web WordPress</h4>
                                     </a>
                                     <ul>
-                                        <li>Creative Agency</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                        <li>$3500 - $4000</li>
+                                        <li>Ziggo</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Moratalaz, Madrid</li>
+                                        <li>$2500 - $3000</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="items-link f-right">
-                                <a href="/job_details">Full Time</a>
-                                <span>7 hours ago</span>
+                                <a href="/job_details">Ver oferta</a>
+                                <span>Hace 7 horas</span>
                             </div>
                         </div>
                         <!-- single-job-content -->
@@ -313,18 +304,18 @@
                                 </div>
                                 <div class="job-tittle">
                                     <a href="/job_details">
-                                        <h4>Digital Marketer</h4>
+                                        <h4>Desarrollador web para e-commerce</h4>
                                     </a>
                                     <ul>
-                                        <li>Creative Agency</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
+                                        <li>Elisa</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Alcobendas, Madrid</li>
                                         <li>$3500 - $4000</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="items-link f-right">
-                                <a href="/job_details">Full Time</a>
-                                <span>7 hours ago</span>
+                                <a href="/job_details">Ver oferta</a>
+                                <span>hace 12 horas</span>
                             </div>
                         </div>
                         <!-- single-job-content -->
@@ -335,40 +326,18 @@
                                 </div>
                                 <div class="job-tittle">
                                     <a href="/job_details">
-                                        <h4>Digital Marketer</h4>
+                                        <h4>Administrador de Sistemas Informáticos y Redes</h4>
                                     </a>
                                     <ul>
-                                        <li>Creative Agency</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                        <li>$3500 - $4000</li>
+                                        <li>Rostele</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Barcelona, Cataluya</li>
+                                        <li>$5500 - $6000</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="items-link f-right">
-                                <a href="/job_details">Full Time</a>
-                                <span>7 hours ago</span>
-                            </div>
-                        </div>
-                        <!-- single-job-content -->
-                        <div class="single-job-items mb-30">
-                            <div class="job-items">
-                                <div class="company-img">
-                                    <a href="/job_details"><img src="public/img/icon/job-list4.png" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="/job_details">
-                                        <h4>Digital Marketer</h4>
-                                    </a>
-                                    <ul>
-                                        <li>Creative Agency</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                        <li>$3500 - $4000</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="items-link f-right">
-                                <a href="/job_details">Full Time</a>
-                                <span>7 hours ago</span>
+                                <a href="/job_details">Ver oferta</a>
+                                <span>Hace 24 horas</span>
                             </div>
                         </div>
                     </div>
@@ -377,220 +346,6 @@
         </section>
         <!-- Featured_job_end -->
         <!-- How  Apply Process Start-->
-        <div class="apply-process-area apply-bg pt-150 pb-150" data-background="public/img/gallery/how-applybg.png">
-            <div class="container">
-                <!-- Section Tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle white-text text-center">
-                            <span>Apply process</span>
-                            <h2> How it works</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- Apply Process Caption -->
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-process text-center mb-30">
-                            <div class="process-ion">
-                                <span class="flaticon-search"></span>
-                            </div>
-                            <div class="process-cap">
-                                <h5>1. Search a job</h5>
-                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut
-                                    laborea.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-process text-center mb-30">
-                            <div class="process-ion">
-                                <span class="flaticon-curriculum-vitae"></span>
-                            </div>
-                            <div class="process-cap">
-                                <h5>2. Apply for job</h5>
-                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut
-                                    laborea.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-process text-center mb-30">
-                            <div class="process-ion">
-                                <span class="flaticon-tour"></span>
-                            </div>
-                            <div class="process-cap">
-                                <h5>3. Get your job</h5>
-                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut
-                                    laborea.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- How  Apply Process End-->
-        <!-- Testimonial Start -->
-        <div class="testimonial-area testimonial-padding">
-            <div class="container">
-                <!-- Testimonial contents -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-xl-8 col-lg-8 col-md-10">
-                        <div class="h1-testimonial-active dot-style">
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="public/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our
-                                            responsibility! So start caring for your body and it will care for you. Eat
-                                            clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="public/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our
-                                            responsibility! So start caring for your body and it will care for you. Eat
-                                            clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="public/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our
-                                            responsibility! So start caring for your body and it will care for you. Eat
-                                            clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-        <!-- Support Company Start-->
-        <div class="support-company-area support-padding fix">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="right-caption">
-                            <!-- Section Tittle -->
-                            <div class="section-tittle section-tittle2">
-                                <span>What we are doing</span>
-                                <h2>24k Talented people are getting Jobs</h2>
-                            </div>
-                            <div class="support-caption">
-                                <p class="pera-top">Mollit anim laborum duis au dolor in voluptate velit ess cillum
-                                    dolore eu lore dsu quality mollit anim laborumuis au dolor in voluptate velit
-                                    cillum.</p>
-                                <p>Mollit anim laborum.Duis aute irufg dhjkolohr in re voluptate velit esscillumlore eu
-                                    quife nrulla parihatur. Excghcepteur signjnt occa cupidatat non inulpadeserunt
-                                    mollit aboru. temnthp incididbnt ut labore mollit anim laborum suis aute.</p>
-                                <a href="about.html" class="btn post-btn">Post a job</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="support-location-img">
-                            <img src="public/img/service/support-img.jpg" alt="">
-                            <div class="support-img-cap text-center">
-                                <p>Since</p>
-                                <span>1994</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Support Company End-->
-        <!-- Blog Area Start -->
-        <div class="home-blog-area blog-h-padding">
-            <div class="container">
-                <!-- Section Tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle text-center">
-                            <span>Our latest blog</span>
-                            <h2>Our recent news</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img src="public/img/blog/home-blog1.jpg" alt="">
-                                    <!-- Blog date -->
-                                    <div class="blog-date text-center">
-                                        <span>24</span>
-                                        <p>Now</p>
-                                    </div>
-                                </div>
-                                <div class="blog-cap">
-                                    <p>| Properties</p>
-                                    <h3><a href="single-blog.html">Footprints in Time is perfect House in Kurashiki</a>
-                                    </h3>
-                                    <a href="#" class="more-btn">Read more »</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img src="public/img/blog/home-blog2.jpg" alt="">
-                                    <!-- Blog date -->
-                                    <div class="blog-date text-center">
-                                        <span>24</span>
-                                        <p>Now</p>
-                                    </div>
-                                </div>
-                                <div class="blog-cap">
-                                    <p>| Properties</p>
-                                    <h3><a href="single-blog.html">Footprints in Time is perfect House in Kurashiki</a>
-                                    </h3>
-                                    <a href="#" class="more-btn">Read more »</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Blog Area End -->
 
     </main>
@@ -769,6 +524,8 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./public/js/plugins.js"></script>
     <script src="./public/js/main.js"></script>
+
+
 
 </body>
 
